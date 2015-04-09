@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+<meta charset ="UTF-8">
+<title> <?php echo $page_title; ?> </title>
+<link rel ="stylesheet" href="includes/style.css">
+</head>
+
+<body>
+	
+<header><h1>TEAM FOUR</h1></header>
+
+<select id="foo">
+    <option value="">Sort By:</option>
+    <option value="shop2.php?sort=showall">Show All</option>
+    <option value="shop2.php?sort=name">Name</option>
+    <option value="shop2.php?sort=PS4">PS4</option>
+    <option value="shop2.php?sort=Xbox">Xbox</option>
+    <option value="shop2.php?sort=Nintendo">Nintendo</option>
+    <option value="shop2.php?sort=PC">PC</option>
+    <option value="shop2.php?sort=price">Price</option>
+</select>
+
+<script>
+    document.getElementById("foo").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+
+<br><br>
+
+<!--
+<th><a href="shop2.php?sort=showall">SHOW ALL:</a></th>
+<th><a href="shop2.php?sort=name">NAME:</a></th>
+<th><a href="shop2.php?sort=PS4">PS4:</a></th>
+<th><a href="shop2.php?sort=Xbox">Xbox:</a></th>
+<th><a href="shop2.php?sort=Nintendo">Nintendo:</a></th>
+<th><a href="shop2.php?sort=PC">PC:</a></th>
+<th><a href="shop2.php?sort=price">PRICE:</a></th>
+<th><a href="contact_seller.php">CONTACT SELLER</a></th>
+-->
+
+
+<!-- <form action="" method="POST">
+	<input type=button name="def" value="true"><br> 
+
+</form> -->
+

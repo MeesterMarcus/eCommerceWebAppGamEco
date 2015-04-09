@@ -1,0 +1,76 @@
+Use this file to ask any questions and we can collaborate on what the best option is. 
+
+Questions:
+
+Desiree – 
+
+1.How will we handle if their keys do not work and they are unable to contact supplier 
+or if supplier tells them to call us? It's our business on the line.
+
+-Marcus
+If the key does not work they will contact customer support by sending in a support ticket. 
+The customer support will determine whether or not they will get a refund. 
+
+2. How will we accept payment? Credit Card only? Paypal? Will need a credit check. We need 
+to keep track of payment in our database. 
+
+-Marcus
+Credit card only for now. We have an entity that keeps transaction history and I believe 
+Marvin added information for each customer’s credit card though whether or not it is saved is a matter of choice. 
+
+3. How do we verify age? An acknowledgement agreement? Will need to keep track of if acknowledged
+ and if so date of acknowledgement in database.
+
+-Marcus
+We can simply check their date of birth to see if they are over 21. Whether the underage person steals
+ their parent’s credit card or what not isn’t our problem. We can implement an acknowledgement agreement 
+ I suppose although we should focus on the basics for now. 
+
+4. Will we pay for the games from the supplier upfront? Will we pay our supplier as we sell to our 
+customers (i.e. will we get the sell then get billed by the supplier)? This may need to be in our database. 
+(fyi buying the games upfront would be a bad business idea as what if the game does not sell or a new version 
+is released. We would lose money. Having a selling license of some sort would be better business-wise. I wonder
+ how other companies do this)
+
+-Marcus
+The game not selling is really just a part of business and that is up to us to determine whether the 
+product will be in demand and we can buy accordingly. I will leave this one up to you.
+
+5. Will we need a Permission class? This will link to Person and have subclasses based on permission 
+level and attributes dictating what can be accessed.
+
+-Marcus
+I am not sure about this one. I think permissions are handled by the database administrator and not
+ sure if it is actually implemented in the database. 
+
+6. What happens when a customer wants to delete their account? We must still keep the data. Also when 
+an employee is no longer employed. Might just change permissions.
+
+-Marcus
+We can delete the account but keep their transaction history. 
+
+7. Will customers be able to call the customer service representative?
+
+-Marcus
+Yes
+
+8. Need to deal with trouble ticket. Will this be done through the database?
+
+-Marcus
+Yes the customer should be able to submit a ticket which is basically contacting the customer support 
+via a submission form. The submission form will probably be done with PHP and the whole exchange should
+ probably happen over email. Holding the conversations and each form in the database would be kind of weird. 
+
+9. Will the database hold information on stock? i.e. if something is out of stock or expected by 
+a certain date. (this can be linked to the supplier...or the manager).
+
+-Marcus
+There is an attribute for the game saying how many are available. If available == 0 should show out
+ of stock on the website. 
+
+10. Decide if supplier should have access to database or not. If not then they are not a user of the system.
+
+-Marcus
+They will not be a user but we still need to hold their data/etc. 
+
+11. Order will need attributes as listed in description above. Change buys to orders in ER.

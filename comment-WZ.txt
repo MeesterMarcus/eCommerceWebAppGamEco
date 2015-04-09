@@ -1,0 +1,17 @@
+The ER diagram around Transactions need to be revised. 
+Basically, those 3-way relationships have problems.
+
+A transaction is a strong entity with a unique key.
+A transaction is Approved by a Manager, Handled by a Rep, 
+Contains one or more Games, and is Placed by a Customer.
+These are 4 binary relationships.
+
+There are also some issues with the normalization. For example,
+the Person table has FDs:
+
+ZipCode,State -> City
+ID -> Status,FirstName,LastName,DOB_Day,DOB_Month,DOB_Year, Phone#, Street
+
+1) What about ID -> ZipCode,State, City ?
+2) Given the above FDs, why is the table BCNF or 3NF? 
+Is {ZipCode, state} a super key, or City a part of a candidate key?

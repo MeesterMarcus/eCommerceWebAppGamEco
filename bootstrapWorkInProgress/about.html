@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>About Us</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href = "css/bootstrap.min.css" rel = "stylesheet">
+      <link href = "css/styles.css" rel = "stylesheet">
+   </head>
+   <body>
+      <div class = "navbar navbar-inverse navbar-static-top">
+         <div class = "container">
+            <a href = "index.html" class = "navbar-brand">GamEco</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            </button>
+            <div class = "collapse navbar-collapse navHeaderCollapse">
+               <ul class = "nav navbar-nav navbar-right">
+                  <li class = "active"><a href = "index.html">Home</a></li>
+                  <li><a href = "about.html">About</a></li>
+                  <li><a href = "#login" data-toggle="modal">Login</a></li>
+                  <li><a href = "#register" data-toggle="modal">Register</a></li>
+                  <li><a href = "#contact" data-toggle="modal">Contact</a></li>
+                  <li><a href = "#search" data-toggle="modal">Search</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <div class = "jumbotron">
+            <center>
+               <h1>About Us</h1>
+       
+            </center>
+         </div>
+      </div>
+      <center>
+         <h2>We strive to bring you the best games at the lowest prices.</h2>
+		 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vestibulum mauris ac iaculis </br>
+		 scelerisque. Fusce in massa fringilla, sagittis tortor nec, efficitur urna. Cum sociis </br>
+		 natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi quis </br>
+		 massa sem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus ut </br>
+		 pulvinar metus. Sed venenatis orci urna, sed accumsan odio lobortis sit amet. Ut rhoncus </br>
+		 arcu ut nibh lacinia, eu faucibus dolor facilisis. Maecenas et ex eros.</br>
+</br>
+		Integer ex sapien, dictum vitae faucibus id, pellentesque varius diam. In hac habitasse </br>
+		platea dictumst. Sed fringilla, mi in feugiat auctor, erat ante finibus dui, at hendrerit </br>
+		arcu nunc et urna. Curabitur imperdiet nisi a mi dapibus, sed lacinia ipsum scelerisque. </br>
+		Vivamus in facilisis ipsum. Ut massa ipsum, commodo vitae congue nec, fringilla non libero. </br>
+		Morbi posuere ligula at purus ornare, vitae molestie ligula congue. Donec id auctor orci. </br>
+		In pretium eleifend diam vel sollicitudin. Suspendisse potenti. Mauris vitae elementum quam,</br>
+		nec facilisis sapien.</p>
+      </center>
+      <div class = "modal fade" id = "contact" role = "dialog">
+         <div class = "modal-dialog">
+            <div class = "modal-content">
+               <div class = "modal-header">
+                  <h4>Contact Tech Support</h4>
+               </div>
+               <div class = "modal-body">
+                  <form class="form-horizontal">
+                  <form name="contactform" method="post" action="send_form_email.php">
+                     <table width="450px">
+                        <tr>
+                           <td valign="top">
+                              <label for="first_name">First Name *</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="first_name" maxlength="50" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top"">
+                              <label for="last_name">Last Name *</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="last_name" maxlength="50" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <label for="email">Email Address *</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="email" maxlength="80" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <label for="telephone">Telephone Number</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="telephone" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <label for="comments">Comments *</label>
+                           </td>
+                           <td valign="top">
+                              <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" style="text-align:center">
+                              <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--In the sql database we need to add a username and password field at least for customer-->
+      <div class = "modal fade" id = "register" role = "dialog">
+         <div class = "modal-dialog">
+            <div class = "modal-content">
+               <div class = "modal-header">
+                  <h4>Registration</h4>
+               </div>
+               <div class = "modal-body">
+                  <form class="form-horizontal">
+                  <form name="contactform" method="post" action="register_user.php">
+                     <table width="450px">
+			               <tr>
+                           <td valign="top">
+                              <label for="username">Username</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="username" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                       
+                        <tr>
+                           <td valign="top">
+                              <label for="password">Password</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="password" name="dob" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                        
+                        <tr>
+                           <td valign="top">
+                              <label for="email">Email Address</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="email" maxlength="80" size="30">
+                           </td>
+                        </tr>
+                        
+                        <tr>
+                           <td valign="top">
+                              <label for="telephone">Telephone Number</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="telephone" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                      
+                        <tr>
+                           <td valign="top">
+                              <label for="state">State</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="state" maxlength="30" size="30">
+                           </td>
+                        </tr>
+
+                        <tr>
+                           <td valign="top">
+                              <label for="first_name">First Name</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="first_name" maxlength="50" size="30">
+                           </td>
+                        </tr>
+                        
+                        <tr>
+                           <td valign="top"">
+                              <label for="last_name">Last Name</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="last_name" maxlength="50" size="30">
+                           </td>
+                        </tr>
+                        
+                        <tr>
+                           <td valign="top">
+                              <label for="city">City</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="city" maxlength="30" size="30">
+                           </td>
+                        </tr>
+
+
+                        <tr>
+                           <td valign="top">
+                              <label for="zip">Zip</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="zip" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                        
+                        <tr>
+                           <td valign="top">
+                              <label for="telephone">Address</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="address" maxlength="30" size="30">
+                           </td>
+                        </tr>
+
+
+                        <tr>
+                           <td valign="top">
+                              <label for="dob">Date of Birth</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="dob" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                        
+                           <td colspan="2" style="text-align:center">
+                              <input type="submit" value="Submit"> 
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--This is not yet implemented with php-->
+      <div class = "modal fade" id = "login" role = "dialog">
+         <div class = "modal-dialog">
+            <div class = "modal-content">
+               <div class = "modal-header">
+                  <h4>Login</h4>
+               </div>
+               <div class = "modal-body">
+                  <form class="form-horizontal">
+                  <form name="contactform" method="post" action="/login/login.php">
+                     <table width="450px">
+                           <tr>
+                           <td valign="top">
+                              <label for="username">Username</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="username" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <label for="password">Password</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="password" name="dob" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                           <td colspan="2" style="text-align:center">
+                              <input type="submit" value="Submit"> 
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class = "modal fade" id = "search" role = "dialog">
+         <div class = "modal-dialog">
+            <div class = "modal-content">
+               <div class = "modal-header">
+                  <h4>Search For A Game</h4>
+               </div>
+               <div class = "modal-body">
+                  <form class="form-horizontal">
+                  <form name="search" method="post" action="search.php">
+                     Choose Search Type:<br>
+                     <select name=“searchtype”>
+                        <option value=“title”>Title</option>
+                        <option value=“genre”>Genre</option>
+                        <option value=“developer”>Developer</option>
+                     </select> <br>
+                     Enter Search Term: <br>
+                        <p> <input name=“searchterm” type=“text” size=40>
+                        <p> <input type="submit" value="Submit"> 
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src = "js/bootstrap.js"></script>
+   </body>
+</html>

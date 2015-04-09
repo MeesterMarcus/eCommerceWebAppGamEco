@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang ="en">
+<head>
+<meta charset ="UTF-8">
+<title>Codes</title>
+<link rel ="stylesheet" href="includes/style.css">
+</head>
+
+<body>
+<p>Select your platform for instructions on how to redeem your code</p>
+<select id="redeem">
+    <option value="">Redeem Sites</option>
+    <option value="https://support.steampowered.com/kb_article.php?ref=5414-TFBN-1352
+">PC</option>
+    <option value="https://account.xbox.com/en-US/PaymentAndBilling/RedeemCode">Xbox</option>
+    <option value="http://www.playstation.com/en-us/explore/playstationnetwork/redemption/">PS4</option>
+    <option value="http://en-americas-support.nintendo.com/app/answers/detail/a_id/112/~/how-to-redeem-a-download-code">Nintendo</option>
+</select>
+
+<script>
+    document.getElementById("redeem").onchange = function() {
+        if (this.selectedIndex!==0) {
+            window.location.href = this.value;
+        }        
+    };
+</script>
+
+<br><br>
+
+</body>
+</html>

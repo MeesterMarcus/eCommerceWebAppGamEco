@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>GamEco</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href = "css/bootstrap.min.css" rel = "stylesheet">
+      <link href = "css/styles.css" rel = "stylesheet">
+   </head>
+   <body>
+      <div class = "navbar navbar-inverse navbar-static-top">
+         <div class = "container">
+            <a href = "#" class = "navbar-brand">GamEco</a>
+            <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            <span class = "icon-bar"></span>
+            </button>
+            <div class = "collapse navbar-collapse navHeaderCollapse">
+               <ul class = "nav navbar-nav navbar-right">
+                  <li class = "active"><a href = "#">Home</a></li>
+                  <li><a href = "#">About</a></li>
+                  <li><a href = "#login" data-toggle="modal">Login</a></li>
+                  <li><a href = "#register" data-toggle="modal">Register</a></li>
+                  <li><a href = "#contact" data-toggle="modal">Contact</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class = "container">
+         <div class = "jumbotron">
+            <center>
+               <h1>Game Selection</h1>
+               <p>Welcome to our eCommerce gaming website. We have a selection of the best games.</p>
+               <a class = "btn btn-warning">PC</a>
+               <a class = "btn btn-success">Xbox One</a>
+               <a class = "btn btn-primary">PS4</a>
+               <a class = "btn btn-danger">Nintendo</a>
+            </center>
+         </div>
+      </div>
+      <center>
+         <h2>Featured Games:</h2>
+      </center>
+      <div class = "container">
+         <div class = "row">
+            <div class = "col-sm-3">
+               <img src="pics/gcovers/csgo.jpg" alt="CS GO" style="width:218px;height:300px">
+               <a href = "#" class = "btn btn-warning">Add to Cart</a>
+            </div>
+            <div class = "col-sm-3">
+               <img src="pics/gcovers/diablo3.jpg" alt="Diablo III" style="width:218px;height:300px">
+               <a href = "#" class = "btn btn-warning">Add to Cart</a>
+            </div>
+            <div class = "col-sm-3">
+               <img src="pics/gcovers/rome2.jpg" alt="Rome II Total War" style="width:218px;height:300px">
+               <a href = "#" class = "btn btn-warning">Add to Cart</a>
+            </div>
+            <div class = "col-sm-3">
+               <img src="pics/gcovers/mordor.jpg" alt="Middle-Earth: Shadows of Mordor" style="width:218px;height:300px">
+               <a href = "#" class = "btn btn-warning">Add to Cart</a>
+            </div>
+         </div>
+      </div>
+      <div class = "modal fade" id = "contact" role = "dialog">
+         <div class = "modal-dialog">
+            <div class = "modal-content">
+               <div class = "modal-header">
+                  <h4>Contact Tech Support</h4>
+               </div>
+               <div class = "modal-body">
+                  <form class="form-horizontal">
+                  <form name="contactform" method="post" action="send_form_email.php">
+                     <table width="450px">
+                        <tr>
+                           <td valign="top">
+                              <label for="first_name">First Name *</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="first_name" maxlength="50" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top"">
+                              <label for="last_name">Last Name *</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="last_name" maxlength="50" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <label for="email">Email Address *</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="email" maxlength="80" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <label for="telephone">Telephone Number</label>
+                           </td>
+                           <td valign="top">
+                              <input  type="text" name="telephone" maxlength="30" size="30">
+                           </td>
+                        </tr>
+                        <tr>
+                           <td valign="top">
+                              <label for="comments">Comments *</label>
+                           </td>
+                           <td valign="top">
+                              <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td colspan="2" style="text-align:center">
+                              <input type="submit" value="Submit">   <a href="http://www.freecontactform.com/email_form.php">Email Form</a>
+                           </td>
+                        </tr>
+                     </table>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src = "js/bootstrap.js"></script>
+   </body>
+</html>
